@@ -1,0 +1,1 @@
+This directory contains the ssl certificate and the ssl key. simple-sso runs on https and the cert and the key are passed to  ListenAndServeTLS. 

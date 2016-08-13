@@ -1,0 +1,13 @@
+sudo: false
+language: go
+
+install:
+ - go get go-bindata
+before_script:
+ - go generate
+go:
+ - 1.5
+
+script:
+ - go vet ./...
+ - go test ./...

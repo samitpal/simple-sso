@@ -1,0 +1,28 @@
+{{ template "header" }}
+
+<form action="/sso" method="post" class="smart-green">
+    <h1>SSO Login Form
+    	{{ if .Error }}
+        	<span>Invalid credentials.</span>
+    	{{ end }}
+    </h1>
+    <label>
+        <span>User Name :</span>
+        <input id="name" type="text" name="username" placeholder="Your Full Name" />
+    </label>
+   
+    <label>
+        <span>Password :</span>
+        <input id="email" type="password" name="password" placeholder="Valid Password" />
+    </label> 
+     <label>
+     	<span>&nbsp;</span>
+        <input id="query_string" type="hidden" name="query_string" value={{ .QueryString }} />
+    </label>    
+     <label>
+        <span>&nbsp;</span>
+        <input type="submit" class="button" value="Submit" />
+    </label>    
+</form>
+
+{{ template "footer" }}
