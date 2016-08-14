@@ -32,12 +32,13 @@ Running the binary
 -------------------
 
 Following principles of 12 factor app, simple-sso uses environment variables for its configurations. These are.
+
 | Variable      | Default value | Purpose |
 |---------------|--------------|------------|
 | sso_ssl_cert_path  |  ssl_certs/cert.pem | ssl certificate path |
 | sso_ssl_key_path  |ssl_certs/key.pem   | ssl certificate private key |
 | sso_private_key_path  | key_pair/demo.rsa  | rsa private key path used to sign the token |
-| sso_weblog_dir  |  "" | Directory path where access hits are logged |
+| sso_weblog_dir  |  - | Directory path where access hits are logged |
 | sso_user_roles  | false  | Whether to pack in the roles info within the token |
 | sso_cookie_name  | SSO_C  | Name of the sso cookie |
 | sso_cookie_domain  | 127.0.0.1  | Domain name of the cookie |
@@ -45,9 +46,9 @@ Following principles of 12 factor app, simple-sso uses environment variables for
 | sso_ldap_host  | localhost  | Ldap host |
 | sso_ldap_port  | 389  | Ldap Post |
 | sso_ldap_ssl  | false  | whether to use ssl |
-| sso_ldap_basedn  | -| Ldap base dn |
-| sso_ldap_binddn  | -| Ldap bind dn |
-| sso_ldap_bindpasswd  | -| Ldap bind password |
+| sso_ldap_basedn  | - | Ldap base dn |
+| sso_ldap_binddn  | - | Ldap bind dn |
+| sso_ldap_bindpasswd  | - | Ldap bind password |
 
 
 Caveats
