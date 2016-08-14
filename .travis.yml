@@ -2,7 +2,7 @@ sudo: false
 language: go
 
 install:
- - go get go-bindata
+ - go get github.com/jteeuwen/go-bindata
 before_script:
  - go generate
 go:
