@@ -22,6 +22,8 @@ Installation
 
 * go get github.com/jteeuwen/go-bindata
 
+* go install github.com/jteeuwen/go-bindata
+
 * $ go get -u github.com/samitpal/simple-sso
 
 * export PATH=$PATH:$GOPATH/bin
