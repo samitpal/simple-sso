@@ -24,6 +24,8 @@ Installation
 
 * $ go get -u github.com/samitpal/simple-sso
 
+* export PATH=$PATH:$GOPATH/bin
+
 * $ go generate
 
 * $ go install
