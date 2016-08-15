@@ -33,7 +33,7 @@ Installation
 Running the binary
 -------------------
 
-Following principles of 12 factor app, simple-sso uses environment variables for its configurations. These are.
+Just run the simple-sso binary. Following principles of 12 factor app, simple-sso uses environment variables for its configurations. These are.
 
 | Variable      | Default value | Purpose |
 |---------------|--------------|------------|
@@ -49,7 +49,7 @@ Following principles of 12 factor app, simple-sso uses environment variables for
 | sso_ldap_port  | 389  | Ldap host port. |
 | sso_ldap_ssl  | false  | whether to use ssl. |
 | sso_ldap_basedn  | - | Ldap base dn. |
-| sso_ldap_binddn  | - | Ldap bind dn. |
+| sso_ldap_binddn  | - | Ldap bind dn if anonymous bind is disallowed. |
 | sso_ldap_bindpasswd  | - | Ldap bind password if anonymous bind is disallowed. |
 
 
