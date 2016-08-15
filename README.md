@@ -6,7 +6,7 @@ Summary
 ------------------
 simple-sso is an SSO service with support for roles based authorization written in the Go programming language. 
 
-For browser based applications the service exposes the /sso handler which sets the sso cookie for a given domain. For instance if the login service runs as login.example.com, the sso cookie domain could be configured as example.com. That way any application running under a subdomain of example.com will be able to leverage the sso service. The value of the sso cookie is a jwt token signed by the rsa private key of the simple-sso service. To use this service the applications need to have the corresponding public key in order to decrypt the cookie. See the code under example_app directory.
+For browser based applications the service exposes the /sso handler which sets the sso cookie for a given domain. For instance if the login service runs as login.example.com, the sso cookie domain could be configured as example.com. That way any application running under a subdomain of example.com will be able to leverage the sso service (see [rfc6265](https://tools.ietf.org/html/rfc6265#page-6)). The value of the sso cookie is a [jwt](https://jwt.io/) token signed by the rsa private key of the simple-sso service. To use this service the applications need to have the corresponding public key in order to decrypt the cookie. See the code under example_app directory.
 
 simple-sso also exposes /auth_token handler which can be used to download the encrypted jwt token. The downloaded token can potentially be passed as Authorization headers by client applications to server apps hopefully using ssl.
 
